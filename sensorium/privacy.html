@@ -1,0 +1,94 @@
+<!--
+  Політика приватності застосунку SENSORIUM — для екрана згоди Google.
+  Тримати ПРАВДИВОЮ: вона описує те, що справді робить код у sigma-ops
+  (clients-invite, clients-calendar). Змінюється код — спершу змінюється вона.
+-->
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SENSORIUM — політика конфіденційності</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin-bottom: .25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2.25rem; }
+  .updated { opacity: .65; font-size: .9rem; margin-top: 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  .en { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(127,127,127,.35); }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .7; }
+</style>
+</head>
+<body>
+
+<h1>Політика конфіденційності SENSORIUM</h1>
+<p class="updated">Востаннє оновлено: 19 вересня 2026 року</p>
+
+<p>SENSORIUM — закритий робочий кабінет однієї пілатес-тренерки (Анастасії).
+Ця сторінка пояснює, які дані Google він отримує, навіщо і що з ними робить.</p>
+
+<h2>Які дозволи Google і навіщо</h2>
+<ul>
+  <li><b>Надсилання листів від імені тренерки</b> (<code>gmail.send</code>). Лише щоб
+    надіслати клієнтці коротке запрошення на її сторінку — коли тренерка сама
+    натискає «Запросити» на її картці. Цей дозвіл не дає читати пошту, і
+    SENSORIUM її не читає.</li>
+  <li><b>Події календаря тренерки</b> (<code>calendar.events.owned</code>,
+    <code>calendar.events.freebusy</code>). Щоб показати її розклад у кабінеті й
+    записати, перенести чи скасувати заняття, яке вона сама записує.</li>
+</ul>
+
+<h2>Що потрапляє в календар</h2>
+<p>У подію заняття записуються лише час, тривалість, імʼя клієнтки й внутрішній
+ідентифікатор картки. Нотатки тренерки, відомості про здоровʼя, цілі й план у
+календар не потрапляють ніколи.</p>
+
+<h2>Що зберігається</h2>
+<ul>
+  <li>Доступ до Google (токен) зберігається на приватному домашньому сервері й
+    доступний лише службам, які надсилають запрошення й показують розклад.</li>
+  <li>Події календаря не копіюються й не зберігаються: розклад щоразу читається
+    з Google-календаря наживо.</li>
+  <li>Про запрошення зберігається лише, коли й на яку адресу його надіслано.</li>
+</ul>
+
+<h2>Чого SENSORIUM не робить</h2>
+<ul>
+  <li>Не продає, не передає й не показує дані Google нікому стороньому.</li>
+  <li>Не використовує їх для реклами чи для навчання моделей штучного інтелекту.</li>
+  <li>Не читає пошту тренерки й не пише листів, яких вона не ініціювала.</li>
+</ul>
+
+<h2>Як відкликати доступ</h2>
+<p>Будь-коли на <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+— застосунок SENSORIUM → «Видалити доступ». Після цього запрошення й розклад
+просто перестануть працювати.</p>
+
+<div class="en">
+<h2>In English</h2>
+<p>SENSORIUM is a private workspace for a single Pilates teacher. It requests
+<code>gmail.send</code> solely to send, from the teacher's own mailbox, the
+invitation she triggers for a client; it cannot and does not read mail. It
+requests <code>calendar.events.owned</code> and <code>calendar.events.freebusy</code>
+to show her schedule and to create, move or cancel the sessions she books; an
+event holds only time, duration, the client's first name and an opaque card id.
+Tokens are stored on a private server and readable only by the two services that
+use them; calendar data is read live and not stored. Google user data is never
+sold, shared, used for advertising or used to train AI models. Access can be
+revoked at any time at myaccount.google.com/permissions.</p>
+<p>SENSORIUM's use and transfer of information received from Google APIs will
+adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google
+API Services User Data Policy</a>, including the Limited Use requirements.</p>
+</div>
+
+<h2>Контакт</h2>
+<p><a href="mailto:ostap.moravskyi@gmail.com">ostap.moravskyi@gmail.com</a></p>
+
+<footer><a href="./">SENSORIUM</a></footer>
+</body>
+</html>
